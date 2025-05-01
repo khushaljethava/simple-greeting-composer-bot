@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom greeting card palette
+				greeting: {
+					'blue': '#a8d0e6',
+					'pink': '#f8bbd0',
+					'mint': '#b8e0d2',
+					'yellow': '#ffd166',
+					'purple': '#d4a5ff'
 				}
+			},
+			fontFamily: {
+				handwriting: ['Pacifico', 'cursive'],
+				casual: ['Comic Neue', 'cursive'],
+				elegant: ['Playfair Display', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +98,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
